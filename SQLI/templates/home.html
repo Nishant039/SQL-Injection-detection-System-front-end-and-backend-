@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VIT</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='main.css')}}">
+</head>
+<body>
+<header>
+	<nav>
+		<div class="logo"></div>
+		<div class="brand">
+			VTOP (Vellore Campus)
+		</div>
+	</nav>
+</header>
+<section>
+	<div class="login students">
+		<div class="heading">
+			VTOP for Employee and Students
+		</div>
+
+		<div class="info"> 
+
+		With responsive fresh look and feel.
+		</div>
+
+		<div class="button">
+			<form action="{{url_for('login_temp')}}" method="POST">
+			<button type="submit">
+				Login to Vtop
+			</button>
+			</form>
+		</div>
+	</div>
+	<div class="spotlight">
+		<div class="head">Spotlight</div>
+		<ul>
+			<li>Something Something</li>
+		</ul>
+	</div>
+	<div class="login parents">
+		<div class="heading">
+			VTOP for Parents
+		</div>
+		<div class="info"> 
+		With responsive fresh look and feel.
+		</div>
+
+		<div class="button">
+			<form>
+			<button type="submit">
+				Login to Vtop
+			</button>
+			</form>
+		</div>	
+	</div>
+	<div class="login alumni">
+			<div class="heading">
+			VTOP for Alumni
+		</div>
+		<div class="info"> 
+		With responsive fresh look and feel.
+		</div>
+		<div class="button">
+			<form>
+			<button type="submit">
+				Login to Vtop
+			</button>
+			</form>
+		</div>
+	</div>
+</section>
+
+
+</body>
+</html>

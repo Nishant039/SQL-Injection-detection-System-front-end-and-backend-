@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VIT</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='login.css')}}">
+</head>
+<body>
+<header>
+	<nav>
+		<div class="logo"></div>
+		<div class="brand">
+			VTOP (Vellore Campus)
+		</div>
+	</nav>
+</header>
+
+<form action="?" method="GET" onsubmit="search();return false;">
+	<input type="text" id="searchItem" value=""/>
+	<input class="button" type="submit" value="Search" />
+</form>
+
+<br><br>
+
+<table id="results">
+<tr>
+    <th>Name</th>
+    <th>Seats</th>
+    <th>Code</th>
+</tr>
+</table>
+
+<p id="stat"></p>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript"></script>      
+<script src="{{ url_for('static', filename='script.js') }}" type="text/javascript"></script>
+
+</body>
+</html>

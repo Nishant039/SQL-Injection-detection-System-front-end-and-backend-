@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VIT</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='login.css')}}">
+</head>
+<body>
+<header>
+	<nav>
+		<div class="logo"></div>
+		<div class="brand">
+			VTOP (Vellore Campus)
+		</div>
+	</nav>
+</header>
+<section id="center">
+	<div id="login" class="login students">
+	VTOP Login
+	</div>
+
+<form action="?" method="POST" onsubmit="login();return false;">
+ <input type="text" id="uname" value=""/>
+<input type="password" id="passw" value=""/>
+	<input class="button" type="submit" value="Login" />
+</form>
+
+
+<br><br>
+
+<p id="stat"></p>
+
+<form action="{{url_for('courses')}}" method="POST" ">
+<input class="button" type="submit" value="View Courses" />
+</form>
+
+</section>
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript"></script>
+        
+<script src="{{ url_for('static', filename='script.js') }}" type="text/javascript"></script>
+
+</body>
+
+
+</html>
